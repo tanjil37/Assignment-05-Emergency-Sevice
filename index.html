@@ -1,22 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Service</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    
 
-</head>
-<body>
+    <!-- DaisyUi + Tailwind cdn link -->
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!-- Fontawosome Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Font -->
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="w-11/12 mx-auto font-hind">
+    <header class="p-4 bg-white">
+      <div class="flex justify-between">
+        <div class="flex items-center gap-3">
+          <img class="w-12 h-12" src="./assets/logo.png" alt="" />
+          <h1 class="text-[#006747] font-bold text-[20px] font-hind">Emargency <br> Service</h1>
+        </div>
 
-    
-    
-
-    <script src="js/script.js"></script>
-</body>
+        <div>
+          <button class="text-black bg-[#41ff6b1a] px-4 py-2 rounded-[50px]">
+            <span>0</span
+            ><img
+              class="w-6 h-6 inline-block ml-2"
+              src="assets/heart.png"
+              alt=""
+            />
+          </button>
+          <button
+            class="text-black bg-[#41ff6b1a] px-4 py-2 rounded-[50px] ml-3"
+          >
+            <span>100</span
+            ><img
+              class="w-6 h-6 inline-block ml-2"
+              src="assets/coin.png"
+              alt=""
+            />
+          </button>
+          <button class="text-white bg-[#00a63e] px-4 py-2 rounded-[50px] ml-3">
+            <span class="mr-2">0</span>Copy
+          </button>
+        </div>
+      </div>
+    </header>
+    <main></main>
+  </body>
 </html>
