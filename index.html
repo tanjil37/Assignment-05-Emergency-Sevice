@@ -54,7 +54,7 @@
           <button
             class="text-black bg-[#41ff6b1a] px-4 py-2 rounded-[50px] ml-3 font-bold text-base"
           >
-            <span>100</span
+            <span id="coin-count">100</span
             ><img
               class="w-6 h-6 inline-block ml-2"
               src="assets/coin.png"
@@ -87,9 +87,11 @@
 
     <main class="bg-[#dfefff]">
       <!-- card container -->
-      <div class="w-11/12 mx-auto grid py-10 grid-cols-4 gap-6">
+      <div
+        class="w-11/12 mx-auto py-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+      >
         <!-- National Emergency card  -->
-        <div class="col-span-1 p-6 bg-white rounded-xl">
+        <div class="card col-span-1 p-6 bg-white rounded-xl">
           <div class="flex justify-between items-center">
             <img src="assets/emergency.png" alt="" />
             <svg
@@ -111,13 +113,15 @@
           </div>
 
           <div class="mt-2">
-            <h3 class="font-bold text-[24px] text-black">
+            <h3 class="service-name-english font-bold text-[24px] text-black">
               National Emergency Number
             </h3>
             <p class="font-normal text-[18px] text-gray-500 mt-1">
               National Emergency
             </p>
-            <p class="font-bold text-black text-[32px] mt-3">999</p>
+            <p class="hotline-number font-bold text-black text-[32px] mt-3">
+              999
+            </p>
             <button class="rounded-[50px] py-2 px-4 bg-[#F2F2F2] mt-1">
               All
             </button>
@@ -130,7 +134,10 @@
             >
               <i class="fa-regular fa-clone"></i>Copy
             </button>
-            <button id="call-btn" class="bg-[#00A63E] py-3 px-10 rounded-lg text-white">
+            <button
+              id="call-btn"
+              class="call-btn bg-[#00A63E] py-3 px-10 rounded-lg text-white"
+            >
               <i class="fa-solid fa-phone mr-2"></i>Call
             </button>
           </div>
@@ -229,7 +236,7 @@
             <h3 class="text-lg font-semibold">
               <i class="fa-solid fa-clock-rotate-left mr-3"></i>Call History
             </h3>
-            <button
+            <button id="clear-history-btn"
               class="text-white bg-[#00a63e] px-4 py-2 rounded-[50px] ml-3 text-base"
             >
               Clear
@@ -237,12 +244,10 @@
           </div>
 
           <!-- History card -->
-          <div class="mt-4 bg-[#F2F2F2] flex justify-between rounded-lg p-5">
-            <div class="text-lg">
-              <h3 class="font-semibold text-black">Fire Service Number</h3>
-              <p class="font-normal">999</p>
-            </div>
-            <div class="text-lg font-normal">11:39:58 AM</div>
+          <div id="history-list">
+          
+            
+
           </div>
         </div>
 
